@@ -1,9 +1,7 @@
-/**
- * {link https://leetcode.com/problems/running-sum-of-1d-array/description/}
- */
+
+//  [https://leetcode.com/problems/running-sum-of-1d-array/description/]
 
 fn main(){
-
     running_sum([1,2,3,4].to_vec());
 }
 
