@@ -1,7 +1,5 @@
-use std::{collections::btree_map::Range, ops::Index, vec};
-
 fn main() {
-    let result = smaller_numbers_than_current([8,1,2,2,3].to_vec());
+    let result = smaller_numbers_than_current([8, 1, 2, 2, 3].to_vec());
     println!("{:?}", result);
 
     // let vec = [8, 1, 2, 2, 3].to_vec();
@@ -11,14 +9,12 @@ fn main() {
     // sorted.sort();
 
     // println!("{:?}, {:?}", vec, sorted);
-    
-    
+
     // let result: Vec<i32> = vec
     // .iter()
     // .map(|&num| sorted.iter().position(|&pos| pos == num).unwrap() as i32)
     // .collect();
     // println!("Result :: {:?}", result);
-
 }
 
 fn count_pairs(nums: Vec<i32>, target: i32) -> i32 {
@@ -42,12 +38,7 @@ fn count_pairs(nums: Vec<i32>, target: i32) -> i32 {
     return count as i32;
 }
 
-fn running_sum(mut nums: Vec<i32>) -> Vec<i32> {
-    for i in 1..nums.len() {
-        nums[i] = nums[i] + nums[i - 1];
-    }
-    nums
-}
+
 
 fn smaller_numbers_than_current(nums: Vec<i32>) -> Vec<i32> {
     let mut sorted = nums.clone();
